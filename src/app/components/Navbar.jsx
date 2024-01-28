@@ -33,16 +33,16 @@ const Navbar = () => {
             <Link href="/">
               <li className="text-xl font-SymbioticSen pt-2 cursor-pointer hover:animate-pulse hover:font-bold hover:text-blue-800">Home</li>
             </Link>
-            <Link href="/Services.jsx">
+            <Link href="/services">
               <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">Services</li>
             </Link>
-            <Link href="../pages/Careers.jsx">
+            <Link href="/Careers">
               <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">Careers</li>
             </Link>
-            <Link href="../pages/AboutUs.jsx">
+            <Link href="/AboutUs">
               <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">About Us</li>
             </Link>
-            <Link href="../pages/Login.jsx">
+            <Link href="/Login">
             <li className="cursor-pointer bg-gradient-to-r from-blue-500 from-10% to-emerald-500 to-90% p-2 rounded-full hover:animate-pulse hover:text-blue-800">
               Log in{" "}
             </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="flex-col py-5">
-          <Link href="../page.js">
+          <Link href="/">
             <li
               onClick={() => setMenuOpen(false)}
               className="text-xl font-SymbioticSen py-3"
@@ -78,7 +78,7 @@ const Navbar = () => {
               Home
             </li>
           </Link>
-          <Link href="../page.js">
+          <Link href="/services">
             <li
               onClick={() => setMenuOpen(false)}
               className="text-xl font-SymbioticSen py-3"
@@ -86,7 +86,7 @@ const Navbar = () => {
               Services
             </li>
           </Link>
-          <Link href="../page.js">
+          <Link href="/Careers">
             <li
               onClick={() => setMenuOpen(false)}
               className="text-xl font-SymbioticSen py-3"
@@ -94,7 +94,7 @@ const Navbar = () => {
               Careers
             </li>
           </Link>
-          <Link href="../page.js">
+          <Link href="/AboutUs">
             <li
               onClick={() => setMenuOpen(false)}
               className="text-xl font-SymbioticSen py-3"
