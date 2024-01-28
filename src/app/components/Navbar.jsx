@@ -18,32 +18,32 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`fixed w-full h-20 shadow-xl ${
+      className={`fixed w-full h-20 shadow-xl z-10 ${
         isDarkMode ? "bg-gray-800 text-white" : "bg-cyan-200 text-black"
       }`}
     >
       <div className="flex justify-between items-center h-full px-4">
         <Link href="/">
-          <div className="cursor-pointer bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-2 rounded-full">
+          <div className="animate-pulse shadow-lg cursor-pointer bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-2 rounded-full">
             <Image src={Logo} alt="logo" width="205" height="75" priority />
           </div>
         </Link>
         <div className="hidden sm:flex">
           <ul className="flex gap-4">
             <Link href="/">
-              <li className="text-xl font-SymbioticSen pt-2 cursor-pointer">Home</li>
+              <li className="text-xl font-SymbioticSen pt-2 cursor-pointer hover:animate-pulse hover:font-bold hover:text-blue-800">Home</li>
             </Link>
             <Link href="Services.jsx">
-              <li className="text-xl font-SymbioticSen pt-2">Services</li>
+              <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">Services</li>
             </Link>
             <Link href="../pages/Careers.jsx">
-              <li className="text-xl font-SymbioticSen pt-2">Careers</li>
+              <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">Careers</li>
             </Link>
             <Link href="../pages/AboutUs.jsx">
-              <li className="text-xl font-SymbioticSen pt-2">About Us</li>
+              <li className="text-xl font-SymbioticSen pt-2 hover:animate-pulse hover:font-bold hover:text-blue-800">About Us</li>
             </Link>
             <Link href="../pages/Login.jsx">
-            <li className="cursor-pointer bg-gradient-to-r from-blue-500 from-10% to-emerald-500 to-90% p-2 rounded-full">
+            <li className="cursor-pointer bg-gradient-to-r from-blue-500 from-10% to-emerald-500 to-90% p-2 rounded-full hover:animate-pulse hover:font-bold hover:text-blue-800">
               Log in{" "}
             </li>
             </Link>
